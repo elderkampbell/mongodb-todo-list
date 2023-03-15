@@ -1,0 +1,6 @@
+// Desafio 17
+// Retorne a quantidade total de produtos em uma nova coleção chamada resumoProdutos
+db.resumoProdutos.insertOne(
+    { franquia: "McDonalds", totalProdutos: db.produtos.countDocuments({}) },
+    );
+db.resumoProdutos.find({}, { _id: 0 });
